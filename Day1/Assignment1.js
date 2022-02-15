@@ -4,6 +4,7 @@ function Employee(){
     var empid=5001;
     var designation="Intern";
     var salary=50000;
+    var age= 22;
 
     var returnobj={
         "getfirstname":function(){
@@ -21,15 +22,18 @@ function Employee(){
         },
         "getsalary":function(){
             return salary;
+        },
+        "getage":function(){
+            return age;
         }
     };
     return returnobj;
 
 }
-
 var person = Employee();
 console.log(person.getfirstname());
 console.log(person.getlastname());
 console.log(person.getempid());
 console.log(person.getdesignation());
 console.log(person.getsalary());
+console.log(person.getage());
