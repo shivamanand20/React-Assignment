@@ -21,6 +21,7 @@ twodiv.style.border='5px solid blue';
 twodiv.style.width='300px';
 twodiv.style.textAlign='center';
 twodiv.style.margin='auto';
+twodiv.style.marginTop='100px';
 twodiv.addEventListener('mouseover',()=>{
     twodivtext.style.color='red';
 });
