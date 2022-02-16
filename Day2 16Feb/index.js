@@ -1,18 +1,30 @@
-let onediv= document.querySelector('#one');
 
+const onediv = document.querySelector('#one');
+const onedivtext= onediv.querySelector('h1');
+onedivtext.textContent='Welcome to Fareportal ';
+onediv.style.border='5px solid red';
+onediv.style.width='400px';
+onediv.style.textAlign='center';
+onediv.style.margin='auto';
 onediv.addEventListener('mouseover',()=>{
-    onediv.style.backgroundColor='red';
-    
+    onedivtext.style.color='red';
 });
+
 onediv.addEventListener('mouseleave',()=>{
-    onediv.style.backgroundColor='black' ;
+    onedivtext.style.color='black';
 })
 
-let twodiv= document.querySelector('#two');
-
+const twodiv= document.querySelector('#two');
+const twodivtext= twodiv.querySelector('h2');
+twodivtext.textContent='Welcome Shivam ';
+twodiv.style.border='5px solid blue';
+twodiv.style.width='300px';
+twodiv.style.textAlign='center';
+twodiv.style.margin='auto';
 twodiv.addEventListener('mouseover',()=>{
-    twodiv.style.backgroundColor='red';
+    twodivtext.style.color='red';
 });
 twodiv.addEventListener('mouseleave',()=>{
-    twodiv.style.backgroundColor='black' ;
-});
+    twodivtext.style.color='black';
+})
+
