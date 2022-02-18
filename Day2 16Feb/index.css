@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(230, 91, 91);
+}
+div {
+    width: 30%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#div1 {
+    margin-bottom: 10px;
+}
+h1{
+    color: aliceblue;
+}
