@@ -1,49 +1,13 @@
+import ReactDOM from "react-dom";
+import App from "./components/Counter";
 
-import ReactDOM from 'react-dom';
-import React from 'react';
-import App from "./Components/ConceptofInterpolation";
-ReactDOM.render(<App></App>, document.getElementById("root"))
+var i = 0;
+    
+setInterval(function() {
+    debugger;
+    i = i + 1;
+    console.log('Currently at ' + i);
+    ReactDOM.render(<App count={i}></App>, document.getElementById("root"))
+}, 1000);
 
-// ReactDOM.render(<HeaderComponent></HeaderComponent> ,document.getElementById("root"))
-// function HeaderComponent(){
-
-//   return React.createElement("div",{},[
-
-//     React.createElement("h1",{},"This is the header for the session"),
-
-//     React.createElement("h1",{},"This is other header"),
-
-//     React.createElement("h1",{},"This is sample Paragraph"),
-
-//     React.createElement("div",{},[
-
-//       React.createElement("section",{},[
-
-//        React.createElement("h1",{},"This is React Component"),
-
-//        React.createElement("div",{},[
-
-//         React.createElement("h2",{},"This is Another Component")
-
-//        ]),
-
-//     ]),
-
-//     React.createElement("article",{},[
-
-//       React.createElement("h1",{},"This is React Component"),
-
-//       React.createElement("div",{},[
-
-//         React.createElement("h2",{},"This is Another Component")
-
-//       ])
-
-//     ]),
-
-//   ]),
-
-// ])
-
-// }
 
