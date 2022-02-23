@@ -11,3 +11,8 @@ Day-2:
 Day-3:
 1. Date time event
 2. Assignment of syncing input box and variable value **
+
+employeeassign:-
+1. Contains the assignment of filetnames.
+2. Contains the task of get and delete api.
+
