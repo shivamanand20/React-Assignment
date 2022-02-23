@@ -17,13 +17,16 @@
 2. Contains the task of get and delete api.
 
 => Employeoneapi:-
+
 1.Contains the api for employee with all Get,Post,Put,Delete methods
 
 => day6react
+
 1.Two way databinding concepts.
 2.Lifecycle 
 3.Increment Counter 
 
 => day6
+
 1. Working with classes
 
