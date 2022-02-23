@@ -16,3 +16,7 @@ employeeassign:-
 1. Contains the assignment of filetnames.
 2. Contains the task of get and delete api.
 
+Employeoneapi:-
+Contains the api for employee with all Get,Post,Put,Delete methods
+
+
