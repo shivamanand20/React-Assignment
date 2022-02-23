@@ -13,7 +13,7 @@
 2. Assignment of syncing input box and variable value **
 
 => employeeassign:-
-1. Contains the assignment of filetnames.
+1. Contains the assignment of filternames.
 2. Contains the task of get and delete api.
 
 => Employeoneapi:-
