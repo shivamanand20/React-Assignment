@@ -13,10 +13,8 @@ export default function EmployeeListComponent(props) {
     const filterHandler = (name) => {
         setFilteredName(name)
     }
-
     return (
         <div>
-            
             <h1>Employee List is Given Below...</h1>
             <FilterComponent onFilter={filterHandler} searchText={filteredName}></FilterComponent>
             <div>
