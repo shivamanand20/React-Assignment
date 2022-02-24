@@ -14,7 +14,9 @@
 
 => employeeassign:-
 1. Contains the assignment of filternames.
-2. Contains the task of get and delete api.
+2. Contains the assignment of get ,delete and post api.
+3. Contains the assignment of get,delete, and post using hooks.
+4. Contains the basic concepts of hooks.
 
 => Employeoneapi:-
 
