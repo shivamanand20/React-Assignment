@@ -1,6 +1,7 @@
 import React from 'react';
 import Axios from "axios"
 import EmployeeDetailsComponent from "../Components/EmployeeDetailsComponent"
+//import PostForm from '../Components/Formpost';
 
 export default class EmployeeListComponent extends React.Component {
     constructor() {
@@ -17,13 +18,13 @@ export default class EmployeeListComponent extends React.Component {
                 {this.state.employeeList.map((employee) => {
                     return <EmployeeDetailsComponent key={employee.id} {...employee} deleteEmployee={this.deleteEmployee}></EmployeeDetailsComponent>
                 })}
-            </div>
+            </div>    
         )
     }
 
     deleteEmployee = (event) => {
         debugger;
-        Axios.delete("https://localhost:5001/api/Employee" + event.target.id).then(() => {
+        Axios.delete("https://localhost:5001/api/Employee/" + event.target.id).then(() => {
             alert("Employee is Deleted");
             this.getData();
         })

@@ -21,8 +21,8 @@ export default function EmployeeDetailsComponent(props) {
                   <div>
                     { props.id % 2 !== 0 && <h5 style={styleObject.headerStyling} className="card-title">{props.name}: </h5>}
                     { props.id % 2 === 0 && <h5 style={styleObject.headerStyling} className="card-title">{props.name}: </h5>}
-                    <div>
-                        <p className="card-text">{props.id} <b>{props.createdAt}</b> </p>
+                   <div>
+                        <p className="card-text"><b>Employee id= {props.employeeid} </b> <br></br> <b> employeename: {props.employeename}</b> <br></br><b>salary ={props.salary}</b> <br></br> <b>Employee age: {props.age}</b> </p>
                     </div>
                     <input type="button" style={styleObject.buttonStyle} className="btn btn-primary" value="Go somewhere" />
                   </div>

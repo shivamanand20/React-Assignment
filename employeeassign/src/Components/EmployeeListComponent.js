@@ -1,7 +1,6 @@
 import EmployeeDetailsComponent from "./EmployeeDetailsComponent";
 import FilterComponent from "./FilterComponent";
 import { useState } from "react";
-
 export default function EmployeeListComponent(props) {
     
     const [filteredName, setFilteredName] = useState("")
