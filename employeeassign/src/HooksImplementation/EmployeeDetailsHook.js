@@ -31,28 +31,28 @@ export default function EmployeeDetailsHook(){
     var [age, setage] = useState('');
     var [salary, setsalary] = useState(0);
     
-    var changeHandler1 = (event) => {
-       setemployeeid  (
-            event.target.value
-        )
-    }
-    var changeHandler2 = (event) => {
-        setemployeeName(
-            event.target.value
-        )
-    }
+    // var changeHandler1 = (event) => {
+    //    setemployeeid  (
+    //         event.target.value
+    //     )
+    // }
+    // var changeHandler2 = (event) => {
+    //     setemployeeName(
+    //         event.target.value
+    //     )
+    // }
 
-    var changeHandler3 = (event) => {
-        setage(
-            event.target.value
-        )
-    }
+    // var changeHandler3 = (event) => {
+    //     setage(
+    //         event.target.value
+    //     )
+    // }
 
-    var changeHandler4 = (event) => {
-        setsalary(
-            event.target.value
-        )
-    }
+    // var changeHandler4 = (event) => {
+    //     setsalary(
+    //         event.target.value
+    //     )
+    // }
 
     var data={
         employeeid:parseInt(employeeid,10),
@@ -75,13 +75,13 @@ function AddEmployee(event)
             <div>
             <form onSubmit={AddEmployee}>
                 <label>Employeeid:</label>
-            <input type="number" id="setemployeeid"  onChange={changeHandler1}/><br></br><br></br>
+            <input type="number" id="setemployeeid"  onChange={(e)=> setemployeeid(e.target.value)}/><br></br><br></br>
             <label>Employeename:</label>
-            <input  type="text" id="setemployeeName" onChange={changeHandler2}/><br></br><br></br>
+            <input  type="text" id="setemployeeName" onChange={(e)=> setemployeeName(e.target.value)}/><br></br><br></br>
             <label>Age:</label>
-            <input  type="number"id="setage" onChange={changeHandler3}/><br></br><br></br>
+            <input  type="number"id="setage" onChange={(e) => setage(e.target.value)}/><br></br><br></br>
             <label>Salary:</label>
-            <input type="number" id="setsalary" onChange={changeHandler4}/>
+            <input type="number" id="setsalary" onChange={(e)=>setsalary(e.target.value)}/>
             <input type="submit" id="submit" value="Submit" />
             </form>
             </div>
