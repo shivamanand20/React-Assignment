@@ -17,6 +17,7 @@
 2. Contains the assignment of get ,delete and post api.
 3. Contains the assignment of get,delete, and post using hooks.
 4. Contains the basic concepts of hooks.
+5. Contains the Single page application.
 
 => Employeoneapi:-
 
