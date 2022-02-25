@@ -31,28 +31,28 @@ export default function EmployeeDetailsHook(){
     var [age, setage] = useState('');
     var [salary, setsalary] = useState(0);
     
-    // var changeHandler1 = (event) => {
-    //    setemployeeid  (
-    //         event.target.value
-    //     )
-    // }
-    // var changeHandler2 = (event) => {
-    //     setemployeeName(
-    //         event.target.value
-    //     )
-    // }
+    var changeHandler1 = (event) => {
+       setemployeeid  (
+            event.target.value
+        )
+    }
+    var changeHandler2 = (event) => {
+        setemployeeName(
+            event.target.value
+        )
+    }
 
-    // var changeHandler3 = (event) => {
-    //     setage(
-    //         event.target.value
-    //     )
-    // }
+    var changeHandler3 = (event) => {
+        setage(
+            event.target.value
+        )
+    }
 
-    // var changeHandler4 = (event) => {
-    //     setsalary(
-    //         event.target.value
-    //     )
-    // }
+    var changeHandler4 = (event) => {
+        setsalary(
+            event.target.value
+        )
+    }
 
     var data={
         employeeid:parseInt(employeeid,10),
@@ -74,15 +74,15 @@ function AddEmployee(event)
         <div>
             <div>
             <form onSubmit={AddEmployee}>
-                <label>Employeeid:</label>
-            <input type="number" id="setemployeeid"  onChange={(e)=> setemployeeid(e.target.value)}/><br></br><br></br>
-            <label>Employeename:</label>
-            <input  type="text" id="setemployeeName" onChange={(e)=> setemployeeName(e.target.value)}/><br></br><br></br>
-            <label>Age:</label>
-            <input  type="number"id="setage" onChange={(e) => setage(e.target.value)}/><br></br><br></br>
-            <label>Salary:</label>
-            <input type="number" id="setsalary" onChange={(e)=>setsalary(e.target.value)}/>
-            <input type="submit" id="submit" value="Submit" />
+                <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Employeeid:</label>
+            <input type="number" id="setemployeeid"  onChange={changeHandler1}/><br></br><br></br>
+            <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Employeename:</label>
+            <input  type="text" id="setemployeeName" onChange={changeHandler2}/><br></br><br></br>
+            <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Age:</label>
+            <input  type="number"id="setage" onChange={changeHandler3}/><br></br><br></br>
+            <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Salary:</label>
+            <input type="number" id="setsalary" onChange={changeHandler4}/>
+            <input type="submit" id="submit" value="Submit" style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}/>
             </form>
             </div>
             <h2>Employee List is given Below:</h2>
@@ -93,12 +93,3 @@ function AddEmployee(event)
         </div>
     )
 }
-//     return (
-//         <div>
-//             <h2>Employee List is given Below:</h2>
-//             {employeeList.map((employee) => {
-//                 return <EmployeeDetailsComponent key={employee.eid} deleteEmployee={DeleteEmployee}{...employee}></EmployeeDetailsComponent>
-//             })}
-//         </div>
-//     )
-// }
