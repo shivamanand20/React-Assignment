@@ -25,27 +25,27 @@ function AddEmployeeComponent() {
         <div>
             <form onSubmit={Addemployee}>
                 <div>
-                    <label>Enter Employee id:- </label>
+                    <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Enter Employee id:- </label>
                     <input type="number" placeholder="Enter employeeid" value={employeeid} onChange={(event)=>{setemployeeid(event.target.value)}} required/><br/>
                 </div>
                 <div>
-                    <label>Enter Employee Name:- </label>
+                    <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Enter Employee Name:- </label>
                     <input type="text" placeholder="Enter employeename" value={employeename} onChange={(event)=>{setemployeeName(event.target.value)}} required/><br/>
                 </div>
                 <div>
-                    <label>Enter Employee age:- </label>
+                    <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Enter Employee age:- </label>
                     <input type="number" placeholder="Enter age" value={age} onChange={(event)=>{setage(event.target.value)}}required/><br/>
                 </div>
                 <div>
-                    <label>Enter Salary:- </label>
+                    <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Enter Salary:- </label>
                     <input type="number" placeholder="Enter salary" value={salary} onChange={(event)=>{setsalary(event.target.value)}} required/><br/>
                 </div>
-                <button>
+                <button style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>
                     Add Employee
                 </button><br/>
                 <div className='text-left' style={{ padding: '10px' }}>
                             <Link to='/'>
-                                <button className='btn btn-danger'>Back to Home Page</button>
+                                <button className='btn btn-danger' style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Back to Home Page</button>
                             </Link>
                         </div>
             </form>

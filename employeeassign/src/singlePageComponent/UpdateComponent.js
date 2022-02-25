@@ -21,18 +21,18 @@ export default class UpdateComponent extends React.Component {
         return (
             <div>
                 <form onSubmit={this.updateEmployee}>
-                        <label>Empid: </label>
+                        <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Empid:  </label>
                         <input type="number" name="employeeid" placeholder={this.state.employeeid} /><br></br><br></br>
-                        <label>EmpName: </label>
+                        <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>EmpName: </label>
                         <input type="text" name="employeename" placeholder={this.state.employeename} onChange={this.changeHandler} /><br></br><br></br>
-                        <label>Age: </label>
+                        <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Age: </label>
                         <input type="number" name="age" placeholder={this.state.age} onChange={this.changeHandler} /><br></br><br></br>
-                        <label>EmpSalary: </label>
-                        <input type="number" name="salary" placeholder={this.state.salary} onChange={this.changeHandler} /><br></br><br></br>
-                        <input type="submit" value="Update" /><br></br><br></br>
+                        <label style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>EmpSalary: </label>
+                        <input type="number" name="salary" placeholder={this.state.salary} onChange={this.changeHandler}  /><br></br><br></br>
+                        <input type="submit" value="Update" style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}} /><br></br><br></br>
                     </form>
                     <Link to='/'>
-                                <button className='btn btn-danger'>Back to Home Page</button>
+                                <button className='btn btn-danger' style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}}>Back to Home Page</button>
                             </Link>
                     
             </div>

@@ -27,9 +27,9 @@ export default class MainComponent extends React.Component {
 
 function ContentComponent() {
     return (
-        <div style={{border: "5px solid red", padding: "10px", margin: "20px", height: "600px", overflow: "auto"}}>
+        <div style={{border: "5px solid red", padding: "10px", margin: "20px", height: "600px", overflow: "auto",display:"inline-block"}}>
         <nav>
-        <Link style={{margin: "10px"}} to="post">Add Employee</Link>
+        <Link style={{margin: "10px", fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}} to="post">Add Employee</Link>
         </nav>
 
             <Route exact path="/" component={GetEmployeeComponent}></Route>
@@ -47,9 +47,9 @@ function HeaderComponent() {
         <div>
             <h1>This is Header Component</h1>
             <nav>
-                <Link style={{margin: "10px"}} to="/">Home</Link>
-                <Link style={{margin: "10px"}} to="help">Get</Link>
-                <Link style={{margin: "10px"}} to="about">About</Link>
+                <Link style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}} to="/">Home</Link>
+                <Link style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}} to="help">Get</Link>
+                <Link style={{margin: "10px",fontFamily:"arial" ,fontSize:"24px",fontWeight:'bolder'}} to="about">About</Link>
             </nav>
         </div>
     )
