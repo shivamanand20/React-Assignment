@@ -17,6 +17,7 @@ export default function EmployeeDetailsComponents(props) {
                         <p className="card-text"><b>Employee id= {props.employeeid} </b> <br></br> <b> employeename: {props.employeename}</b> <br></br><b>salary ={props.salary}</b> <br></br> <b>Employee age: {props.age}</b> </p>
                     </div>
                     <input type="button" id={props.employeeid} className="btn btn-primary" value="Delete" onClick={props.deleteEmployee} />
+                    <input type="button" style={{margin: "20px"}} id={props.employeeid} className="btn btn-primary" value="Update" onClick={props.updateEmployee} />
                   </div>
               </div>
           </div>

@@ -30,8 +30,8 @@ namespace Employeeoneapi.Models
         }
         public List<Employee> GetEmployees()
         {
-            flght.Add(new Employee(1,"Ram",25,1500));
-            flght.Add(new Employee(2,"Shivam",24,16000));
+            //flght.Add(new Employee(1,"Ram",25,1500));
+              //flght.Add(new Employee(2,"Shivam",24,16000));
             return flght;
         } 
         public void AddEmployee(Employee p)

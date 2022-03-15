@@ -47,15 +47,18 @@ namespace Employeeoneapi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employeeoneapi v1"));
             }
-                 app.UseCors(options =>
-
-                options.WithOrigins("https://localhost:5001").AllowAnyMethod().AllowAnyOrigin());
+               
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseCors(builder =>{
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
